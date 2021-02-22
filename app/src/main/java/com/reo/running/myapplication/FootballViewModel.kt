@@ -21,11 +21,10 @@ class FootballViewModel {
 
     private val _buttonText:MutableLiveData<String> =
             MutableLiveData<String>().also { mutableLiveData ->
-                mutableLiveData.value = "mercari"
+                mutableLiveData.value = "テキストが入力されていない時"
             }
     val buttonText : LiveData<String>
     get() = _buttonText
-
 
 
     fun updateButton(isBlank: Boolean) {
@@ -37,6 +36,7 @@ class FootballViewModel {
             _buttonText.value = "Ready"
         }
     }
+
 
     fun submitText(text:String) {
         _submittedText.value = text

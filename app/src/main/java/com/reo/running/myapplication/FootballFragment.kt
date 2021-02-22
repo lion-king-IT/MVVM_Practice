@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import com.reo.running.myapplication.databinding.FragmentFootballBinding
 
 class FootballFragment : Fragment() {
